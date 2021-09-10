@@ -13,7 +13,7 @@
                 <a href="#" class="header-promo light w-inline-block">
                     <div class="label bg-success">NEW</div>
                     
-                    <div class="header-promo-text">Pro-filr is live!!</div>
+                    <div class="header-promo-text">Getverifiedpro is live!!</div>
                 </a>
                 <h1>Find <span class="text-info">your job</span> & make sure goal!</h1>
                 <p class="lead">Your dream job is waiting for you.</p>
