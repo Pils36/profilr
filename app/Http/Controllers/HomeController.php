@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,42 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+       
+
+        return view('pages.index')->with(['page' => 'Homepage']);
+    }
+
+    public function about()
+    {
+        return view('pages.about')->with(['page' => 'About Us']);
+    }
+    public function blog()
+    {
+        return view('pages.blog')->with(['page' => 'Blog']);
+    }
+    public function contact()
+    {
+        return view('pages.contact')->with(['page' => 'Contact Us']);
+    }
+    public function terms()
+    {
+        return view('pages.terms')->with(['page' => 'Terms and Conditions']);
+    }
+    
+    public function privacy()
+    {
+        return view('pages.privacy')->with(['page' => 'Privacy Terms']);
+    }
+    public function pricing()
+    {
+        return view('pages.pricing')->with(['page' => 'Plan & Pricing']);
+    }
+    public function copyright()
+    {
+        return view('pages.copyright')->with(['page' => 'Copyright Policy']);
+    }
+    public function forum()
+    {
+        return view('pages.forum')->with(['page' => 'Forum Rules']);
     }
 }

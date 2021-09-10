@@ -2,21 +2,22 @@
     <!-- Top header  -->
     <!-- ============================================================== -->
     <!-- Start Navigation -->
-    <div class="header header-transparent dark-text">
+    <div class="header header-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <nav id="navigation" class="navigation navigation-landscape">
                         <div class="nav-header">
-                            <a class="nav-brand" href="#">
-                                <img src="{{ asset('assets/img/logo.png') }}" class="logo" alt="" />
+                            <a class="nav-brand" href="{{route('home')}}">
+                                <img src="https://res.cloudinary.com/pilstech/image/upload/v1630685713/proslogo_li2ixf.png" class="logo" alt="" />
+                                {{-- <img src="{{ asset('assets/img/logo.png') }}" class="logo" alt="" /> --}}
                             </a>
                             <div class="nav-toggle"></div>
                         </div>
                         <div class="nav-menus-wrapper">
                             <ul class="nav-menu">
 
-                                <li class="active"><a href="{{ route('home') }}">Home<span class="submenu-indicator"></span></a>
+                                {{-- <li class="active"><a href="{{ route('home') }}">Home<span class="submenu-indicator"></span></a>
                                     <ul class="nav-dropdown nav-submenu">
                                         <li><a href="#">Job Board<span class="submenu-indicator"></span></a>
                                             <ul class="nav-dropdown nav-submenu">
@@ -34,12 +35,20 @@
                                                 <li><a href="freelancer-2.html">Freelancing 2</a></li>
                                                 <li><a href="freelancer-3.html">Freelancing 3</a></li>
                                                 <li><a href="freelancer-4.html">Freelancing 4</a></li>
-                                            </ul>
+                                            </ul>''
                                         </li>
                                     </ul>
-                                </li>
+                                </li> --}}
 
-                                <li><a href="#">Explore<span class="submenu-indicator"></span></a>
+                                {{-- <li @if($page == "Homepage") class="active" @endif> --}}
+
+                                <li @if($page == "Homepage") class="active" @endif><a href="{{route('home')}}">Home</a></li>
+                                <li @if($page == "About Us") class="active" @endif><a href="{{route('about')}}">About Us</a></li>
+                                <li @if($page == "Plan & Pricing") class="active" @endif><a href="{{route('pricing')}}">Plan & Pricing</a></li>
+                                <li @if($page == "Contact Us") class="active" @endif><a href="{{route('contact')}}">Contact Us</a></li>
+                                
+
+                                {{-- <li><a href="#">Explore<span class="submenu-indicator"></span></a>
                                     <ul class="nav-dropdown nav-submenu">
                                         <li><a href="#">Search Job<span class="submenu-indicator"></span></a>
                                             <ul class="nav-dropdown nav-submenu">
@@ -97,9 +106,9 @@
                                         <li><a href="advance-search-1.html">Advance Search 01</a></li>
                                         <li><a href="advance-search-2.html">Advance Search 02</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
 
-                                <li><a href="dashboard.html">Dashboard</a></li>
+                                {{-- <li><a href="dashboard.html">Dashboard</a></li>
 
                                 <li><a href="#">Pages<span class="submenu-indicator"></span></a>
                                     <ul class="nav-dropdown nav-submenu">
@@ -112,20 +121,20 @@
                                         <li><a href="faq.html">FAQ's</a></li>
                                         <li><a href="checkout.html">CheckOut</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
 
                             </ul>
 
                             <ul class="nav-menu nav-menu-social align-to-right">
-
+{{-- 
                                 <li>
                                     <a href="javascript:void(0);" data-toggle="modal" data-target="#upload-resume">
                                         <i class="fa fa-upload mr-1"></i>Upload Resume
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li class="add-listing dark-bg">
                                     <a href="#" data-toggle="modal" data-target="#login">
-                                        <i class="ti-user mr-1"></i> Sign in
+                                        <i class="ti-user mr-1"></i> Get Started
                                     </a>
                                 </li>
                             </ul>

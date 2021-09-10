@@ -12,7 +12,8 @@
             <div class="col-lg-7 col-md-8">
                 <a href="#" class="header-promo light w-inline-block">
                     <div class="label bg-success">NEW</div>
-                    <div class="header-promo-text">Klioeo is now UK-Wide</div>
+                    
+                    <div class="header-promo-text">Pro-filr is live!!</div>
                 </a>
                 <h1>Find <span class="text-info">your job</span> & make sure goal!</h1>
                 <p class="lead">Your dream job is waiting for you.</p>
@@ -78,9 +79,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-9">
                 <div class="sec-heading">
-                    <h2>Top Featured <span class="theme-cl-2">Jobs</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
+                    <h2>Classified Business <span class="theme-cl-2" style="color: green">Directory</span></h2>
+                    <p>20x More Visibility for your business</p>
                 </div>
             </div>
         </div>
@@ -271,119 +271,97 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-9">
                 <div class="sec-heading">
-                    <h2>Popular Jobs <span class="theme-cl-2">Category</span></h2>
+                    <h2>What People <span class="theme-cl-2">Saying</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="owl-carousel owl-theme middle-arrow-hover" id="reviews-slide">
 
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-bar-chart"></i>
+                    <!-- Single Review -->
+                    <div class="item testimonial-center">
+                        <div class="smart-tes-author">
+                            <div class="st-author-box">
+                                <div class="st-author-thumb">
+                                    <img src="assets/img/team-1.jpg" class="img-fluid" alt="" />
+                                </div>
+                                <div class="st-author-info">
+                                    <h4 class="st-author-title">Adam Williams</h4>
+                                    <span class="st-author-subtitle theme-cl">CEO Of Microwoft</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smart-tes-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et.</p>
+                        </div>
                     </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Accounting & Finance</a></h3>
-                        <span>310 Jobs Found</span>
+
+                    <!-- Single Review -->
+                    <div class="item testimonial-center">
+                        <div class="smart-tes-author">
+                            <div class="st-author-box">
+                                <div class="st-author-thumb">
+                                    <img src="assets/img/team-2.jpg" class="img-fluid" alt="" />
+                                </div>
+                                <div class="st-author-info">
+                                    <h4 class="st-author-title">Lilly Wikdoner</h4>
+                                    <span class="st-author-subtitle theme-cl">Content Writer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smart-tes-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et.</p>
+                        </div>
                     </div>
+
+                    <!-- Single Review -->
+                    <div class="item testimonial-center">
+                        <div class="smart-tes-author">
+                            <div class="st-author-box">
+                                <div class="st-author-thumb">
+                                    <img src="assets/img/team-3.jpg" class="img-fluid" alt="" />
+                                </div>
+                                <div class="st-author-info">
+                                    <h4 class="st-author-title">Shaurya Williams</h4>
+                                    <span class="st-author-subtitle theme-cl">Manager Of Doodle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smart-tes-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Review -->
+                    <div class="item testimonial-center">
+                        <div class="smart-tes-author">
+                            <div class="st-author-box">
+                                <div class="st-author-thumb">
+                                    <img src="assets/img/team-4.jpg" class="img-fluid" alt="" />
+                                </div>
+                                <div class="st-author-info">
+                                    <h4 class="st-author-title">Shrithi Setthi</h4>
+                                    <span class="st-author-subtitle theme-cl">CEO Of Applio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smart-tes-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-palette"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Art & Design</a></h3>
-                        <span>200 Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-car"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Transportation</a></h3>
-                        <span>100k Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-home"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Telecommunications</a></h3>
-                        <span>507 Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-desktop"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Designing & Multimedia</a></h3>
-                        <span>10k Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-brush-alt"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Education Training</a></h3>
-                        <span>102 Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-car"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Automotive Jobs</a></h3>
-                        <span>45 Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Category -->
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="urip_cated shadow">
-                    <div class="urip_cated_avater">
-                        <i class="ti-bar-chart-alt"></i>
-                    </div>
-                    <div class="urip_cated_caps">
-                        <h3 class="cats_urip_title"><a href="#">Banking Jobs</a></h3>
-                        <span>32 Jobs Found</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
     </div>
 </section>
 <!-- ============================ Category Section End ==================================== -->
@@ -395,7 +373,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-9">
                 <div class="sec-heading">
-                    <h2>High Qualified <span class="theme-cl-2">Candidates</span></h2>
+                    <h2>Professionals you <span class="theme-cl-2" style="color: green">May know</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua.</p>
                 </div>
@@ -608,105 +586,128 @@
 <!-- ============================ Candidates Section End ==================================== -->
 
 <!-- ============================ Featured Themes Start ==================================== -->
-<section class="gray-light">
+{{-- <section class="gray-light">
     <div class="container">
 
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-9">
                 <div class="sec-heading">
-                    <h2>What People <span class="theme-cl-2">Saying</span></h2>
+                    <h2>Popular Jobs <span class="theme-cl-2">Category</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="owl-carousel owl-theme middle-arrow-hover" id="reviews-slide">
+        <div class="row justify-content-center">
 
-                    <!-- Single Review -->
-                    <div class="item testimonial-center">
-                        <div class="smart-tes-author">
-                            <div class="st-author-box">
-                                <div class="st-author-thumb">
-                                    <img src="assets/img/team-1.jpg" class="img-fluid" alt="" />
-                                </div>
-                                <div class="st-author-info">
-                                    <h4 class="st-author-title">Adam Williams</h4>
-                                    <span class="st-author-subtitle theme-cl">CEO Of Microwoft</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="smart-tes-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et.</p>
-                        </div>
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-bar-chart"></i>
                     </div>
-
-                    <!-- Single Review -->
-                    <div class="item testimonial-center">
-                        <div class="smart-tes-author">
-                            <div class="st-author-box">
-                                <div class="st-author-thumb">
-                                    <img src="assets/img/team-2.jpg" class="img-fluid" alt="" />
-                                </div>
-                                <div class="st-author-info">
-                                    <h4 class="st-author-title">Lilly Wikdoner</h4>
-                                    <span class="st-author-subtitle theme-cl">Content Writer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="smart-tes-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et.</p>
-                        </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Accounting & Finance</a></h3>
+                        <span>310 Jobs Found</span>
                     </div>
-
-                    <!-- Single Review -->
-                    <div class="item testimonial-center">
-                        <div class="smart-tes-author">
-                            <div class="st-author-box">
-                                <div class="st-author-thumb">
-                                    <img src="assets/img/team-3.jpg" class="img-fluid" alt="" />
-                                </div>
-                                <div class="st-author-info">
-                                    <h4 class="st-author-title">Shaurya Williams</h4>
-                                    <span class="st-author-subtitle theme-cl">Manager Of Doodle</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="smart-tes-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et.</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Review -->
-                    <div class="item testimonial-center">
-                        <div class="smart-tes-author">
-                            <div class="st-author-box">
-                                <div class="st-author-thumb">
-                                    <img src="assets/img/team-4.jpg" class="img-fluid" alt="" />
-                                </div>
-                                <div class="st-author-info">
-                                    <h4 class="st-author-title">Shrithi Setthi</h4>
-                                    <span class="st-author-subtitle theme-cl">CEO Of Applio</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="smart-tes-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et.</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
 
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-palette"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Art & Design</a></h3>
+                        <span>200 Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-car"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Transportation</a></h3>
+                        <span>100k Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-home"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Telecommunications</a></h3>
+                        <span>507 Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-desktop"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Designing & Multimedia</a></h3>
+                        <span>10k Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-brush-alt"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Education Training</a></h3>
+                        <span>102 Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-car"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Automotive Jobs</a></h3>
+                        <span>45 Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Category -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="urip_cated shadow">
+                    <div class="urip_cated_avater">
+                        <i class="ti-bar-chart-alt"></i>
+                    </div>
+                    <div class="urip_cated_caps">
+                        <h3 class="cats_urip_title"><a href="#">Banking Jobs</a></h3>
+                        <span>32 Jobs Found</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-</section>
+</section> --}}
+
 <!-- ============================ Featured Themes End ==================================== -->
 
 <!-- ============================ News Updates Start ==================================== -->
@@ -716,9 +717,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-9">
                 <div class="sec-heading">
-                    <h2>Latest Updates & News</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
+                    <h2>Blog</h2>
+                    
                 </div>
             </div>
         </div>
@@ -818,26 +818,5 @@
 </section>
 <!-- ============================ News Updates End ==================================== -->
 
-<!-- ============================ Call To Action Start ================================== -->
-<section class="call-to-act" style="background:#2944c1 url(assets/img/landing-bg.png) no-repeat">
-    <div class="container">
-        <div class="row justify-content-center">
-
-            <div class="col-lg-7 col-md-8">
-                <div class="clt-caption text-center mb-4">
-                    <h3 class="text-light">Subscribe Now!</h3>
-                    <p class="text-light">Simple pricing plans. Unlimited web maintenance service</p>
-                </div>
-                <div class="inner-flexible-box subscribe-box">
-                    <div class="input-group">
-                        <input type="text" class="form-control large" placeholder="Enter your mail here">
-                        <button class="btn btn-subscribe bg-dark" type="button"><i
-                                class="fa fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ============================ Call To Action End ================================== -->
+@include("includes.subscribe")
 @endsection

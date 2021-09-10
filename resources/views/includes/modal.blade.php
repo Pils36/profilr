@@ -10,16 +10,28 @@
                 <div class="modal-body">
 
                     <div class="login-form">
-                        <form>
+                        <form action="{{ route('login') }}" method="POST">
+                            @csrf
 
                             <div class="form-group">
-                                <label>User Name</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <label>Email Address</label>
+                                <input type="text" class="form-control" placeholder="Email Address" name="email">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
 
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" placeholder="*******">
+                                <input type="password" class="form-control" placeholder="*******" name="password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
 
                             <div class="form-group">
