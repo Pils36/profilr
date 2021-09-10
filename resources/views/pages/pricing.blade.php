@@ -2,8 +2,6 @@
 
 @section('content')
 
-			
-			
 			<!-- ============================ Hero Banner  Start================================== -->
 			<div class="hero-banner full bg-cover center" style="background:#223c1d url(assets/img/landing-bg.png) no-repeat;" data-overlay="0">
 				<div class="container">
