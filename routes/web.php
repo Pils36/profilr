@@ -20,6 +20,8 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home page');
+
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
@@ -35,3 +37,5 @@ Route::get('/pricing', [App\Http\Controllers\HomeController::class, 'pricing'])-
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 
 Route::get('/forum', [App\Http\Controllers\HomeController::class, 'forum'])->name('forum');
+
+Route::post('/customlogin', [App\Http\Controllers\HomeController::class, 'login'])->name('customlogin');

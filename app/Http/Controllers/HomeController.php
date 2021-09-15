@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\User as User;
+use Illuminate\Support\Facades\Hash;
+
 class HomeController extends Controller
 {
     /**
@@ -24,7 +27,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-       
 
         return view('pages.index')->with(['page' => 'Homepage']);
     }
@@ -62,4 +64,5 @@ class HomeController extends Controller
     {
         return view('pages.forum')->with(['page' => 'Forum Rules']);
     }
+
 }
