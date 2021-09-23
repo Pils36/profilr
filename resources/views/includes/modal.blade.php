@@ -57,12 +57,13 @@
                 <div class="modal-footer">
                     <div class="mf-link"><i class="ti-user"></i>Haven't An Account?<a href="javascript:void(0)"
                             class="theme-cl"> Sign Up</a></div>
-                    <div class="mf-forget"><a href="#"><i class="ti-help"></i>Forget Password</a></div>
+                    <div class="mf-forget"><a href="{{ route('password.request') }}"><i class="ti-help"></i>Forget Password</a></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Modal -->
+
 
     <!-- Upload Resume -->
     <div class="modal fade" id="upload-resume" tabindex="-1" role="dialog" aria-labelledby="resumeupload"

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@php
+    $page = "Login";
+@endphp
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

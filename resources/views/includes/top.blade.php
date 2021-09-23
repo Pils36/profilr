@@ -18,6 +18,9 @@
 
     <!-- Custom CSS -->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+
+    @livewireStyles
+    
 </head>
 
 <body class="blue-skin">

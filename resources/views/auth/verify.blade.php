@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+
+@php
+    $page = "Verify Your Email Address";
+@endphp
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

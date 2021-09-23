@@ -1,5 +1,7 @@
 @include('includes.top')
-@include('includes.loader')
+
+
+{{--  @include('includes.loader')  --}}
 @include('includes.header')
 @yield('content')
 @include('includes.footer')

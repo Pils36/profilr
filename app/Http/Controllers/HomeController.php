@@ -6,10 +6,17 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\User as User;
+use App\Models\AccountIndividual as AccountIndividual;
 use Illuminate\Support\Facades\Hash;
+
+use App\Traits\EndPoints;
 
 class HomeController extends Controller
 {
+
+    use EndPoints;
+
+    public $url, $post, $token;
     /**
      * Create a new controller instance.
      *
@@ -27,8 +34,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $this->url = "https://paysprint.ca/api/v1/classifiedbusinessdirectory";
+        $this->token = "base64:JFM+PJaWD/pBypX+NhXudDrAmianZdGYZ41qz4WhXL0=";
 
-        return view('pages.index')->with(['page' => 'Homepage']);
+        $data = $this->doGet($this->url, $this->token);
+
+
+        return view('pages.index')->with(['page' => 'Homepage', 'data' => $data]);
     }
 
     public function about()
@@ -47,7 +59,7 @@ class HomeController extends Controller
     {
         return view('pages.terms')->with(['page' => 'Terms and Conditions']);
     }
-    
+
     public function privacy()
     {
         return view('pages.privacy')->with(['page' => 'Privacy Terms']);
@@ -65,4 +77,12 @@ class HomeController extends Controller
         return view('pages.forum')->with(['page' => 'Forum Rules']);
     }
 
+
+    public function search(Request $req)
+    {
+        // Query Search
+        $query = AccountIndividual::where('lastname', 'LIKE', '%' . $req->search . '%')->orWhere('firstname', 'LIKE', '%' . $req->search . '%')->get();
+
+        return view('livewire.search-users')->with(['data' => $query]);
+    }
 }

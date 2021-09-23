@@ -17,17 +17,18 @@
                 </a>
                 <h1>Find <span class="text-info">your job</span> & make sure goal!</h1>
                 <p class="lead">Your dream job is waiting for you.</p>
-                <form class="search-big-form banner-search shadow mt-3">
+                <form class="search-big-form banner-search shadow mt-3" action="{{ route('search') }}" method="POST">
+                    @csrf
                     <div class="row m-0">
-                        <div class="col-lg-5 col-md-5 col-sm-12 p-0">
+                        <div class="col-lg-10 col-md-9 col-sm-12 p-0">
                             <div class="form-group">
                                 <i class="ti-search"></i>
-                                <input type="text" class="form-control b-0 b-r l-radius"
-                                    placeholder="Job Title or Keywords">
+                                <input type="text" name="search" class="form-control b-0 b-r l-radius"
+                                    placeholder="Find Verified Professionals">
                             </div>
                         </div>
 
-                        <div class="col-lg-5 col-md-4 col-sm-12 p-0">
+                        {{--  <div class="col-lg-5 col-md-4 col-sm-12 p-0">
                             <div class="form-group">
                                 <select id="jb-category" class="js-states form-control b-0">
                                     <option value="">&nbsp;</option>
@@ -41,10 +42,10 @@
                                     <option value="8">Designing & Multimedia</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>  --}}
 
                         <div class="col-lg-2 col-md-3 col-sm-12 p-0">
-                            <button type="button" class="btn dark-3 full-width r-radius">Search</button>
+                            <button type="submit" class="btn dark-3 full-width r-radius">Search</button>
                         </div>
                     </div>
                 </form>
@@ -87,7 +88,34 @@
 
         <div class="row justify-content-center">
 
-            <!-- Single Item -->
+            @if ($data->status == 200)
+                @foreach ($data->data as $business)
+                    <!-- Single Item -->
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="job_grid_02">
+                            <img src="assets/img/job-featured.png" class="_featured_jbs" alt="">
+                            <div class="jobs-like">
+                                <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
+                            </div>
+                            <div class="jb_types fulltime">{{ (strlen($business->industry) < 25) ? $business->industry : substr($business->industry, 0, 25)."..." }}</div>
+
+                            
+
+                            <div class="jb_grid_01_thumb">
+                                <a  href="{{ ($business->website != null) ? "http://".$business->website : "#" }}" {{ ($business->website != null) ? 'target="_blank"' : '' }}><img src="https://res.cloudinary.com/pilstech/image/upload/v1617797524/paysprint_asset/paysprint_jpeg_black_bk_2_w4hzub.jpg" style="border-radius: 100%" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="jb_grid_01_caption">
+                                <h4 class="_jb_title"><a href="{{ ($business->website != null) ? "http://".$business->website : "#" }}" {{ ($business->website != null) ? 'target="_blank"' : '' }}>{{ $business->business_name }}</a></h4>
+                                <div class="_emp_jb">{{ (strlen($business->description) < 70) ? $business->description : substr($business->description, 0, 70)."..." }}</div>
+                            </div>
+                            <div class="jb_grid_01_footer">
+                                <a href="{{ ($business->website != null) ? "http://".$business->website : "#" }}" {{ ($business->website != null) ? 'target="_blank"' : '' }} class="_jb_apply">View website</a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            @else
+                <!-- Single Item -->
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="job_grid_02">
                     <img src="assets/img/job-featured.png" class="_featured_jbs" alt="">
@@ -107,155 +135,18 @@
                     </div>
                 </div>
             </div>
+            @endif
 
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types parttime">Part Time</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-2.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Data Management System</a></h4>
-                        <div class="_emp_jb">A.K Infra Developers</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
+            
 
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types internship">Internship</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-3.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Graphics Web Designer</a></h4>
-                        <div class="_emp_jb">A.K. Infra Technology</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <img src="assets/img/job-featured.png" class="_featured_jbs" alt="">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types fulltime">Full Time</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-4.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Games &amp; UI Developer</a></h4>
-                        <div class="_emp_jb">Waft Technologies</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types contract">Contract</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-5.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Core PHP Developer</a></h4>
-                        <div class="_emp_jb">Themezhub Infotech</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types parttime">Part Time</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-6.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Drupal Web Developer</a></h4>
-                        <div class="_emp_jb">Simran Web Soft</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types internship">Internship</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-7.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Sr. Products Designer</a></h4>
-                        <div class="_emp_jb">Shai Web Infotech</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Item -->
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
-                <div class="job_grid_02">
-                    <img src="assets/img/job-featured.png" class="_featured_jbs" alt="">
-                    <div class="jobs-like">
-                        <label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label>
-                    </div>
-                    <div class="jb_types contract">Contract</div>
-                    <div class="jb_grid_01_thumb">
-                        <a href="employer-detail.html"><img src="assets/img/c-8.png" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="jb_grid_01_caption">
-                        <h4 class="_jb_title"><a href="job-detail.html">Magento Web Developer</a></h4>
-                        <div class="_emp_jb">Hello Inductries</div>
-                    </div>
-                    <div class="jb_grid_01_footer">
-                        <a href="job-detail.html" class="_jb_apply">View Job</a>
-                    </div>
-                </div>
-            </div>
+         
 
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="mt-3 text-center">
-                    <a href="#" class="_browse_more-2 light">Browse More Jobs</a>
+                    <a href="#" class="_browse_more-2 light">Browse More Business</a>
                 </div>
             </div>
         </div>

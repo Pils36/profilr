@@ -39,3 +39,9 @@ Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright
 Route::get('/forum', [App\Http\Controllers\HomeController::class, 'forum'])->name('forum');
 
 Route::post('/customlogin', [App\Http\Controllers\HomeController::class, 'login'])->name('customlogin');
+
+
+
+
+// Search param
+Route::post('/search', [App\Http\Controllers\HomeController::class, 'search'])->name('search');
